@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "res\styles\socialite.css">  
     <script src="https://kit.fontawesome.com/fa114bfe37.js" crossorigin="anonymous"></script>
+    <script src = "res\scripts\vectorcomp.js"></script>
     <title>Vector Component Tool</title>
 </head>
 
@@ -31,7 +32,7 @@
 
     <hr>
 
-    <details><summary class = "sTitle"><b>General</b></summary>
+    <details open><summary class = "sTitle"><b>General</b></summary>
     
         <p>This tool is a part of Calc.HP. This will allow you to calculate horizontal and vertical components given a single vector</p>
         
@@ -58,26 +59,32 @@
 
     </details>
 
+<hr>
+
     <h2><u>Find Components</u></h2>
 
-    <p>Magnetude = <input id = "mag"></input></p>
+    <p>Magnitude = <input id = "mag"></input></p>
 
     <p>Direction (degrees) = <input type="text" id="dir"></input></p>
-    <p>Enter unit <input list="unit" class = "shortInput">
-    <datalist id = "unit">
-    <option value="m/s">m/s</option>
-    <option value="cm/s">cm/s</option>
-    <option value="mph">mph</option>
-    <option value="kph">kph</option>
-    <option value="N">N</option>
-    </datalist></p>
+    
+    <p>Enter unit <input class = "shortInput" id = "unit" placeholder = "m/s, mph"></p>
+
+<button onclick = "comp()" class = "buttonH">Calculate</button>
 
     <p class = "output"><i>V<sub>x</sub></i> = <span id = "output_X"></span></p>
 
     <p class = "output"><i>V<sub>y</sub></i> = <span id = "output_Y"></span></p>
+
+<button onclick = "int()" class = "int">Interpret</button>
+<br>
+
+<p id = "output_Int"></p>
+
 </div>
 
 </body>
+
+<hr class = "footerSep">
 
 <footer>
 
