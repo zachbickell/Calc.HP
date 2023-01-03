@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href = "res/styles/socialite.css">
+<script src="https://kit.fontawesome.com/fa114bfe37.js" crossorigin="anonymous"></script>
+<title>Gravitational Forces Tool</title>
+<script src = "res\scripts\gravity.js"></script>
+</head>
+
+    <header>
+    
+    <div class = "center">
+
+    <h1>Gravitational Forces Tool</h1>
+    
+    <p>Developed by Zach Bickell</p>
+
+    <a href = "main.html">Home</a>
+
+    </div>
+
+    </header>
+
+    <body>
+
+        <div class="margin">
+    
+    <br>
+
+    <hr>
+
+    <details><summary class = "sTitle"><b>General</b></summary>
+
+    <p>This tool is a part of Calc.HP. This will allow you to calculate results to physics problems involving the gravitational constant, G. The approximate value of G is 6.673 ⋅ 10<sup> -11</sup> <sup>N ⋅ m²</sup> &frasl; <sub>kg²</sub>.</p>
+    
+    <p>The standard equation to calculate gravitational force goes as follows:</p>
+    
+    <img src = "res\components\StEqu.png"></img>
+    
+    <p>Where <i>F</i> is a function of G, Mass and Distance (Radius). This equation can be adapted to solve for Mass or Distance.</p>
+    
+    <br>
+    
+    <img src = "res\components\Req.png"></img>
+
+<p>Equation used to solve for radius/distance, where <i>R</i> is a function of G, Mass, and Force.</p>
+
+<br>
+        
+    <img src = "res/components/Meq.png"></img>
+
+<p>Equation used to solve for a second mass, where <i>M</i><sub>2</sub> is a function of G, Mass, Force, and Radius.</p>
+
+    </details>
+    <hr>
+    <details><summary class = "sTitle"><b>How to use the calculator</b></summary>
+
+<p>The 3 input groups below are for each of the respective equations above. Any values entered in scientific notation must be entered using the e operator instead of multiplying by 10. <br>
+Example: 2.5 ⋅ 10<sup>5</sup> must be entered as 2.5e5. The same applies for negative exponents. 3.2 ⋅ 10<sup>-11</sup> must be entered as 3.2e-11. 
+<br>This tool is kept in fixed metric units to avoid any inaccuracies due to rounding that occurs with conversion. Results in scientific notation are not limited to any amount of significant figures below the JS limit. You can toggle rounding for all 3 functions, though it is recommended you keep the Force function unticked. The rounding parser in JS will automatically round small numbers represented by e-(integer) to 0, which is inaccurate.</p>
+
+<br>
+
+<p>This tool was built and optimized in JavaScript. Enjoy!</p>
+    </details>
+<hr>
+
+<h2><u>Gravitational Force</u></h2>
+
+<img src = "res\components\StEqu.png"></img>
+
+<p>m<sub>1</sub> (kg) = <input id = "mass1_F"></input><p>
+<p>m<sub>2</sub> (kg) = <input id = "mass2_F"></input><p>
+<p>r (m) = <input id = "radius_F"></input><p>
+
+    <input type = "checkbox" class = "check" id = "roundF"> Round <span class="warn">(not recommended for this component)</span></input>
+
+    <br>
+    
+    <button onclick = "force()">Calculate</button>
+    
+<p class = "output"><i>F</i>  = <span id = "output_F"></span></p>
+<hr>
+<h2><u>Radius/Distance</u></h2>
+
+<img src = "res\components\Req.png"></img>
+
+<p>m<sub>1</sub> (kg) = <input id = "mass1_R"></input><p>
+<p>m<sub>2</sub> (kg) = <input id = "mass2_R"></input><p>
+<p>F (N) = <input id = "force_R"></input><p>
+
+    <input type = "checkbox" class = "check" id = "roundR"> Round</input>
+
+    <br>
+    
+    <button onclick = "radius()">Calculate</button>
+    
+<p class = "output"><i>R </i>= <span id = "output_R"></span></p>
+<hr>
+<h2><u>Secondary Mass</u></h2>
+
+<img src = "res\components\Meq.png"></img>
+
+<p>m<sub>1</sub> (kg) = <input id = "mass2_M"></input><p>
+<p>r (m) = <input id = "radius_M"></input><p>
+<p>F (N) = <input id = "force_M"></input><p>
+
+    <input type = "checkbox" class = "check" id = "roundM"> Round</input>
+
+    <br>
+    
+    <button onclick = "mass()">Calculate</button>
+    
+<p class = "output"><i>M</i><sub>2</sub> = <span id = "output_M"></span></p>
+    
+</div>
+
+</body>
+
+<footer>
+
+    <div class = "center">
+
+    <a href = "https://www.instagram.com/zach_bickell/" class = "social_link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+    <a href = "https://github.com/zachbickell/Calc.HP" target="_blank" class = "social_link"><i class="fa-brands fa-github"></i></a>
+
+    <a href = "https://www.reddit.com/user/zach_bickell" target="_blank" class = "social_link"><i class="fa-brands fa-reddit-alien"></i></a>
+
+    <a href="mailto: zacharyabickell@gmail.com" class = "social_link"><i class="fa-regular fa-envelope"></i></a>
+
+</div>
+
+</footer>
+
+</html>
