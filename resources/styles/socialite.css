@@ -36,7 +36,7 @@ button {
     border: solid 1px;
 } 
 
-button:hover {
+.buttonH:hover {
     background-color: #cbcbcb;
     transition: all ease-in-out .2s;
 }
@@ -97,4 +97,27 @@ a:hover {
 
 .shortInput {
     width: 75px;
+}
+
+.footerSep {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.int {
+    border: none;
+    text-decoration: underline;
+}
+
+a:hover {
+    
+    color: navy;
+    /*font-size: 35px;*/
+
+}
+
+int:hover {
+    
+    color: navy;
+
 }
