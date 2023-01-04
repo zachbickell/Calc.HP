@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "res\styles\socialite.css">  
+    <script src="https://kit.fontawesome.com/fa114bfe37.js" crossorigin="anonymous"></script>
+    <script src = "res\scripts\vectorcomp.js"></script>
+    <title>Vector Resultant Tool</title>
+</head>
+
+<header>
+    
+    <div class = "center">
+
+    <h1>Resultant Vector Calculator</h1>
+    
+    <p>Developed by Zach Bickell</p>
+
+    <a href = "main.html">Home</a>
+
+    </div>
+
+    </header>
+
+    <body>
+    
+        <div class="margin">
+    
+        <br>
+    
+        <hr>
+    
+        <details open><summary class = "sTitle"><b>General</b></summary>
+            <p>This tool is a part of Calc.HP. This will allow you to calculate the resultant vector from 2 components</p>
+
+            <p>The standard method to calculate a resultant vector goes as follows:</p>
+
+            <img src="res/components/Vx.png">
+            <br>
+            <img src="res/components/Vy.png">
+
+            <p>2 directional components are given. One in the horizontal (x) direction, and one in the vertical (y) direction</p>
+
+            <p>to find the resultant vector, these 2 values are treated as legs of a right triangle. This makes it so that the resultant vector will be the hypotenuse of this triangle. 
+                this will allow us to use the Pythagorean Theorem to calculate the vectors magnetude.</p>
+
+                <img src="res/components/Runs.png">
+                <br>
+                <img src="res/components/Rsolved.png">
+
+            <p>Values can now be substituted in</p>
+
+                <img src="res/components/Rsub.png">
+                <br>
+                <img src="res/components/Rsolution.png">
+
+            <p>Since vectors have both magnitude <u>and</u> direction, an angle must be calculated. This can be done using an inverse trigonometric function.
+            looking back at the triangle, notice that the angle of the vector (hypotenuse) is opposite the Y component and adjacent to the X component. The tangent function relates these 2 sides, thus it must be used.</p>
+            <img src="res/components/vecthetauns.png">
+                <br>
+                <img src="res/components/vecthetasolved.png">
+                <br>
+                <img src="res/components/vectheta.png">
+        </details>
+
+        <hr>
+
+        <details><summary class = "sTitle"><b>Info</b></summary>
+            <p>Units must be user-entered. Linear direction of components must be specified by positive/negative symbols. For vertical (Y) component, leave positive for up/north, make negative for down/south.
+                for horizontal (X), leave positive for right/east, make negative for left/west.
+            </p>
+            
+            <p>This tool was built and optimized in JavaScript.</p>
+        </details>
+        </div>
+        </body>
+        
+        <hr class = "footerSep">
+
+        <footer>
+        
+            <div class = "center">
+        
+            <a href = "https://www.instagram.com/zach_bickell/" class = "social_link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        
+            <a href = "https://github.com/zachbickell/Calc.HP" target="_blank" class = "social_link"><i class="fa-brands fa-github"></i></a>
+        
+            <a href = "https://www.reddit.com/user/zach_bickell" target="_blank" class = "social_link"><i class="fa-brands fa-reddit-alien"></i></a>
+        
+            <a href="mailto: zacharyabickell@gmail.com" class = "social_link"><i class="fa-regular fa-envelope"></i></a>
+        
+        </div>
+        
+        </footer>
+</html>
