@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
 
 
+
 footer {
     background-color: #f5f5f5;
     padding: 75px 0px 75px 0px;
@@ -120,4 +121,19 @@ int:hover {
     
     color: navy;
 
+}
+
+details summary {
+    outline: none;
+    cursor: pointer;
+}
+
+details {
+    transition: all 0.4s ease-in-out;
+    max-height: 60px;
+}
+
+details[open] {
+    max-height: 1500px;
+    overflow: hidden;
 }
