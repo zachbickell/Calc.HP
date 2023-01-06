@@ -12,7 +12,7 @@ function force() {
             document.getElementById("output_F").innerHTML = resultF.toFixed(2) + " N";
         }
         if(document.getElementById("roundF").checked == false){
-            document.getElementById("output_F").innerHTML = resultF + " m";
+            document.getElementById("output_F").innerHTML = resultF + " N";
         }
         if(m1f == "" || m2f == "" || rf == ""){
             document.getElementById("output_F").innerHTML = "<span class = 'warn'>One or more fields are blank</span>"
