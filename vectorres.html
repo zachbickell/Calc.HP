@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "res\styles\socialite.css">  
     <script src="https://kit.fontawesome.com/fa114bfe37.js" crossorigin="anonymous"></script>
-    <script src = "res\scripts\vectorcomp.js"></script>
+    <script src = "res/scripts/vectorres.js"></script>
     <title>Vector Resultant Tool</title>
 </head>
 
@@ -74,6 +74,29 @@
             
             <p>This tool was built and optimized in JavaScript.</p>
         </details>
+        <hr>
+
+        <h2><u>Calculate Resultant</u></h2>
+
+        <p><i>V<sub>x</sub></i>   = <input id = "Vx"></input><p>
+        <p><i>V<sub>y</sub></i>   = <input id = "Vy"></input><p>
+
+        <p>Unit = <input class = "shortInput" id = "unit" placeholder = "m/s, mph"></p>
+
+        <input type = "checkbox" class = "check" id = "roundR">Round</input>
+
+        <br>
+
+        <button onclick = "res()" class = "buttonH">Calculate</button>
+
+        <p class = "output"><i>R = </i><span id = "outputR"></span></p>
+
+        <p class = "output"><span class = "theta"><i>&#x3B8; = </i></span><span id = "outputTheta"></span></p>
+
+        <button onclick = "int()" class = "int">Interpret</button>
+
+        <p id = "output_Int"></p>
+        
         </div>
         </body>
         
